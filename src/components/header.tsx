@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Header = () => {
   return (
     <header
@@ -10,24 +12,42 @@ export const Header = () => {
             Sankofa
           </span>
           <div className="hidden md:flex space-x-8">
-            <span className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer">
+            <Link
+              href="/"
+              className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer"
+            >
               Home
-            </span>
-            <span className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer">
+            </Link>
+            <Link
+              href="/sobre"
+              className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer"
+            >
               Sobre
-            </span>
-            <span className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer">
+            </Link>
+            <Link
+              href="/grupos"
+              className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer"
+            >
               Grupos
-            </span>
-            <span className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer">
+            </Link>
+            <Link
+              href="/galeria"
+              className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer"
+            >
               Galeria
-            </span>
-            <span className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer">
+            </Link>
+            <Link
+              href="/contato"
+              className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer"
+            >
               Contato
-            </span>
-            <span className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer">
+            </Link>
+            <Link
+              href="/noticias"
+              className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer"
+            >
               Notícias
-            </span>
+            </Link>
           </div>
           <button className="md:hidden text-[#fefefe]">
             <i className="fa-solid fa-bars text-2xl"></i>

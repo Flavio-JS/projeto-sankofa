@@ -40,7 +40,7 @@ export const Footer = () => {
               <input
                 type="email"
                 placeholder="Seu e-mail"
-                className="px-4 py-2 rounded-l-lg w-full"
+                className="px-4 py-2 rounded-l-lg w-full text-white placeholder:text-gray-500"
               />
               <button className="px-4 py-2 bg-[#ce1d00] text-[#fefefe] rounded-r-lg hover:bg-[#5b1300]">
                 <i className="fa-solid fa-paper-plane"></i>
