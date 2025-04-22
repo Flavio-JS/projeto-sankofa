@@ -1,8 +1,8 @@
-import { AboutSummary } from "@/pages/home/components/abaut-summary";
-import { CTASection } from "@/pages/home/components/cta-section";
-import { GallerySection } from "@/pages/home/components/gallery-section";
-import { GroupsSection } from "@/pages/home/components/groups-section";
-import { HeroSection } from "@/pages/home/components/hero-section";
+import { AboutSummary } from "@/components/home/components/abaut-summary";
+import { CTASection } from "@/components/home/components/cta-section";
+import { GallerySection } from "@/components/home/components/gallery-section";
+import { GroupsSection } from "@/components/home/components/groups-section";
+import { HeroSection } from "@/components/home/components/hero-section";
 
 export default function Home() {
   return (
