@@ -1,0 +1,61 @@
+export type Video = {
+  id: number;
+  title: string;
+  description: string;
+};
+
+const videos: Video[] = [
+  {
+    id: 1,
+    title: "Apresentação no Festival de Culturas",
+    description: "Performance completa do grupo Sankofa Ritmos e Danças",
+  },
+  {
+    id: 2,
+    title: "Workshop de Percussão",
+    description: "Oficina ministrada pelo Mestre Kemuel Kesley",
+  },
+];
+
+export const VideoGallery = () => {
+  return (
+    <section
+      id="video-gallery"
+      className="py-20 bg-gradient-to-b from-[#ce1d00]/10 to-[#f37b00]/10"
+    >
+      <div className="container mx-auto px-6">
+        <h2 className="text-3xl font-bold text-[#f37b00] mb-12">
+          Vídeos em Destaque
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {videos.map((video) => (
+            <VideoItem
+              key={video.id}
+              title={video.title}
+              description={video.description}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export type VideoItemProps = {
+  title: string;
+  description: string;
+};
+
+export const VideoItem = ({ title, description }: VideoItemProps) => {
+  return (
+    <div className="bg-[#2c0f00] rounded-xl overflow-hidden">
+      <div className="aspect-video bg-black flex items-center justify-center">
+        <i className="fa-solid fa-play text-4xl text-[#f37b00]"></i>
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-[#f37b00]">{title}</h3>
+        <p className="text-[#fefefe] mt-2">{description}</p>
+      </div>
+    </div>
+  );
+};
