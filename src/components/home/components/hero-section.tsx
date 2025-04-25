@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const HeroSection = () => {
   return (
@@ -21,12 +22,12 @@ export const HeroSection = () => {
           <p className="text-xl md:text-2xl text-[#f37b00] mb-8">
             Transformando sons em identidade desde 2015
           </p>
-          <a
-            href="#"
+          <Link
+            href="/sobre"
             className="inline-block px-8 py-4 bg-[#ce1d00] text-[#fefefe] rounded-lg hover:bg-[#5b1300] transition duration-300"
           >
             Conheça o Projeto
-          </a>
+          </Link>
         </div>
       </div>
     </section>

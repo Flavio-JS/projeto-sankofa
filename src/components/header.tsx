@@ -7,6 +7,15 @@ import {
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
+const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "Sobre", href: "/sobre" },
+  { name: "Grupos", href: "/grupos" },
+  { name: "Galeria", href: "/galeria" },
+  { name: "Contato", href: "/contato" },
+  { name: "Notícias", href: "/noticias" },
+];
+
 export const Header = () => {
   return (
     <header
@@ -15,47 +24,23 @@ export const Header = () => {
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <span className="text-[#fefefe] text-2xl font-bold cursor-pointer">
-            Sankofa
-          </span>
+          <Link
+            href="/"
+            className="text-[#fefefe] text-2xl font-bold cursor-pointer"
+          >
+            Associação Sankofa
+          </Link>
 
           <div className="hidden md:flex space-x-8">
-            <Link
-              href="/"
-              className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer transition-colors"
-            >
-              Home
-            </Link>
-            <Link
-              href="/sobre"
-              className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer transition-colors"
-            >
-              Sobre
-            </Link>
-            <Link
-              href="/grupos"
-              className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer transition-colors"
-            >
-              Grupos
-            </Link>
-            <Link
-              href="/galeria"
-              className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer transition-colors"
-            >
-              Galeria
-            </Link>
-            <Link
-              href="/contato"
-              className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer transition-colors"
-            >
-              Contato
-            </Link>
-            <Link
-              href="/noticias"
-              className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer transition-colors"
-            >
-              Notícias
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
           </div>
 
           <div className="md:hidden">
@@ -70,42 +55,15 @@ export const Header = () => {
               <SheetContent side="left" className="bg-[#2c0f00] border-none">
                 <SheetTitle className="sr-only">Menu de Navegação</SheetTitle>
                 <div className="flex flex-col h-full pt-10">
-                  <Link
-                    href="/"
-                    className="text-[#fefefe] hover:text-[#f37b00] py-3 px-4 text-lg transition-colors"
-                  >
-                    Home
-                  </Link>
-                  <Link
-                    href="/sobre"
-                    className="text-[#fefefe] hover:text-[#f37b00] py-3 px-4 text-lg transition-colors"
-                  >
-                    Sobre
-                  </Link>
-                  <Link
-                    href="/grupos"
-                    className="text-[#fefefe] hover:text-[#f37b00] py-3 px-4 text-lg transition-colors"
-                  >
-                    Grupos
-                  </Link>
-                  <Link
-                    href="/galeria"
-                    className="text-[#fefefe] hover:text-[#f37b00] py-3 px-4 text-lg transition-colors"
-                  >
-                    Galeria
-                  </Link>
-                  <Link
-                    href="/contato"
-                    className="text-[#fefefe] hover:text-[#f37b00] py-3 px-4 text-lg transition-colors"
-                  >
-                    Contato
-                  </Link>
-                  <Link
-                    href="/noticias"
-                    className="text-[#fefefe] hover:text-[#f37b00] py-3 px-4 text-lg transition-colors"
-                  >
-                    Notícias
-                  </Link>
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.name}
+                      href={link.href}
+                      className="text-[#fefefe] hover:text-[#f37b00] py-3 px-4 text-lg transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
 
                   <div className="flex-1" />
 

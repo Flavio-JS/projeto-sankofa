@@ -19,9 +19,6 @@ export const GallerySection = () => {
               width={200}
               height={200}
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <i className="fa-solid fa-play text-4xl text-[#fefefe]"></i>
-            </div>
           </div>
           <div
             id="video-2"
@@ -34,9 +31,6 @@ export const GallerySection = () => {
               width={200}
               height={200}
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <i className="fa-solid fa-play text-4xl text-[#fefefe]"></i>
-            </div>
           </div>
           <div
             id="video-3"
@@ -49,9 +43,6 @@ export const GallerySection = () => {
               width={200}
               height={200}
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <i className="fa-solid fa-play text-4xl text-[#fefefe]"></i>
-            </div>
           </div>
         </div>
       </div>
