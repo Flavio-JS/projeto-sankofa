@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default async function NotFound() {
   return (
-    <div className="min-h-screen pt-20 bg-[#fefefe] flex items-center justify-center px-4">
+    <div className="min-h-screen pt-20 bg-background flex items-center justify-center px-4">
       <div id="error-404" className="max-w-4xl w-full text-center">
         <div className="mb-8">
           <Image
@@ -17,8 +17,8 @@ export default async function NotFound() {
           />
         </div>
 
-        <h1 className="text-6xl font-bold text-[#2c0f00] mb-4">404</h1>
-        <h2 className="text-2xl text-[#5b1300] mb-6">
+        <h1 className="text-6xl font-bold text-text-black-bean mb-4">404</h1>
+        <h2 className="text-2xl text-text-blood-red mb-6">
           Ops! Página não encontrada
         </h2>
         <p className="text-gray-600 mb-8 max-w-lg mx-auto">
@@ -29,14 +29,14 @@ export default async function NotFound() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/"
-            className="inline-flex items-center justify-center gap-3 px-6 py-3 bg-[#ce1d00] text-[#fefefe] rounded-lg hover:bg-[#f37b00] transition-colors"
+            className="inline-flex items-center justify-center gap-3 px-6 py-3 bg-engineering-orange text-text-white rounded-lg hover:bg-orange-wheel transition-colors"
           >
             <FontAwesomeIcon icon={faHome} width={20} />
             Voltar para Home
           </Link>
           <Link
             href="/contato"
-            className="inline-flex items-center justify-center gap-3 px-6 py-3 border-2 border-[#ce1d00] text-[#ce1d00] rounded-lg hover:bg-[#ce1d00] hover:text-[#fefefe] transition-colors"
+            className="inline-flex items-center justify-center gap-3 px-6 py-3 border-2 border-engineering-orange text-text-engineering-orange rounded-lg hover:bg-engineering-orange hover:text-text-white transition-colors"
           >
             <FontAwesomeIcon icon={faEnvelope} width={20} />
             Contate-nos

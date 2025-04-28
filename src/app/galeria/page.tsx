@@ -5,7 +5,7 @@ import { VideoGallery } from "@/components/gallery/components/video-gallery";
 
 export default function Gallery() {
   return (
-    <div className="min-h-screen bg-[#0a0909]">
+    <div className="min-h-screen bg-black">
       <GalleryHero />
       <PhotoGallery />
       <VideoGallery />

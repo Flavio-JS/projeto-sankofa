@@ -26,7 +26,7 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="text-[#fefefe] text-2xl font-bold cursor-pointer"
+            className="text-text-white text-2xl font-bold cursor-pointer"
           >
             Associação Sankofa
           </Link>
@@ -36,7 +36,7 @@ export const Header = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer transition-colors"
+                className="text-text-white hover:text-text-orange-wheel cursor-pointer transition-colors"
               >
                 {link.name}
               </Link>
@@ -46,20 +46,20 @@ export const Header = () => {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <button className="text-[#fefefe] flex justify-center items-center h-max hover:text-[#f37b00] transition-colors">
+                <button className="text-text-white flex justify-center items-center h-max hover:text-text-orange-wheel transition-colors">
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Abrir menu</span>
                 </button>
               </SheetTrigger>
 
-              <SheetContent side="left" className="bg-[#2c0f00] border-none">
+              <SheetContent side="left" className="bg-black-bean border-none">
                 <SheetTitle className="sr-only">Menu de Navegação</SheetTitle>
                 <div className="flex flex-col h-full pt-10">
                   {navLinks.map((link) => (
                     <Link
                       key={link.name}
                       href={link.href}
-                      className="text-[#fefefe] hover:text-[#f37b00] py-3 px-4 text-lg transition-colors"
+                      className="text-text-white hover:text-text-orange-wheel py-3 px-4 text-lg transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -68,7 +68,7 @@ export const Header = () => {
                   <div className="flex-1" />
 
                   <div className="pb-6 px-4">
-                    <p className="text-[#f37b00] text-sm">
+                    <p className="text-text-orange-wheel text-sm">
                       Projeto Sankofa © {new Date().getFullYear()}
                     </p>
                   </div>

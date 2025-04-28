@@ -11,10 +11,10 @@ export const NewsHero = () => {
           src="https://storage.googleapis.com/uxpilot-auth.appspot.com/fb323a96ac-ce52dc61698bc791150f.png"
           alt="african drums and dancers performing on stage with dramatic lighting and movement, photojournalistic style"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-[#fefefe]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-background"></div>
       </div>
       <div className="relative container mx-auto px-6 h-full flex items-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-[#fefefe]">
+        <h1 className="text-5xl md:text-6xl font-bold text-text-white">
           Notícias e Atualizações
         </h1>
       </div>

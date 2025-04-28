@@ -1,3 +1,6 @@
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export type Video = {
   id: number;
   title: string;
@@ -21,10 +24,10 @@ export const VideoGallery = () => {
   return (
     <section
       id="video-gallery"
-      className="py-20 bg-gradient-to-b from-[#ce1d00]/10 to-[#f37b00]/10"
+      className="py-20 bg-gradient-to-b from-engineering-orange/10 to-orange-wheel/10"
     >
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-[#f37b00] mb-12">
+        <h2 className="text-3xl font-bold text-text-orange-wheel mb-12">
           Vídeos em Destaque
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -48,13 +51,13 @@ export type VideoItemProps = {
 
 export const VideoItem = ({ title, description }: VideoItemProps) => {
   return (
-    <div className="bg-[#2c0f00] rounded-xl overflow-hidden">
-      <div className="aspect-video bg-black flex items-center justify-center">
-        <i className="fa-solid fa-play text-4xl text-[#f37b00]"></i>
+    <div className="bg-black-bean rounded-xl overflow-hidden">
+      <div className="aspect-video bg-black flex items-center justify-center text-text-orange-wheel">
+        <FontAwesomeIcon icon={faPlay} width={20} />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-bold text-[#f37b00]">{title}</h3>
-        <p className="text-[#fefefe] mt-2">{description}</p>
+        <h3 className="text-xl font-bold text-text-orange-wheel">{title}</h3>
+        <p className="text-text-white mt-2">{description}</p>
       </div>
     </div>
   );

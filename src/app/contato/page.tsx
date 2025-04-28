@@ -4,7 +4,7 @@ import { ContactInfo } from "@/components/contact/components/contact-info";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-[#fefefe]">
+    <div className="min-h-screen bg-background">
       <ContactHero />
       <ContactForm />
       <ContactInfo />

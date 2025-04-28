@@ -1,3 +1,5 @@
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 export const FeaturedPost = () => {
@@ -12,8 +14,8 @@ export const FeaturedPost = () => {
           alt="african percussion group performing on stage with colorful traditional costumes"
         />
       </div>
-      <span className="text-[#ce1d00] text-sm">12 Mar 2025</span>
-      <h2 className="text-3xl font-bold text-[#2c0f00] mt-2 mb-4 group-hover:text-[#ce1d00] transition">
+      <span className="text-text-engineering-orange text-sm">12 Mar 2025</span>
+      <h2 className="text-3xl font-bold text-text-black-bean mt-2 mb-4 group-hover:text-text-engineering-orange transition">
         Festival de Cultura Afro-Brasileira 2025
       </h2>
       <p className="text-gray-600 mb-6">
@@ -23,10 +25,10 @@ export const FeaturedPost = () => {
       </p>
       <a
         href="#"
-        className="inline-flex items-center text-[#ce1d00] hover:text-[#f37b00]"
+        className="inline-flex gap-4 items-center text-text-engineering-orange hover:text-text-orange-wheel"
       >
         Leia mais
-        <i className="fa-solid fa-arrow-right ml-2"></i>
+        <FontAwesomeIcon icon={faArrowRight} width={20} />
       </a>
     </article>
   );

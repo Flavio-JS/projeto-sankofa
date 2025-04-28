@@ -1,7 +1,7 @@
 export const AboutIntro = () => {
   return (
     <div id="about-intro" className="mb-16">
-      <h2 className="text-3xl font-bold text-[#ce1d00] mb-6">Nossa História</h2>
+      <h2 className="text-3xl font-bold text-text-engineering-orange mb-6">Nossa História</h2>
       <p className="text-lg mb-6">
         Criado em 2015 no Instituto Federal de Goiás – Campus Inhumas, o Projeto
         Sankofa nasceu com a missão de promover a arte, o ensino e a pesquisa a

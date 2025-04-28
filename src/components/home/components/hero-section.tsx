@@ -16,15 +16,15 @@ export const HeroSection = () => {
       </div>
       <div className="relative container mx-auto px-6 pt-32">
         <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-6xl font-bold text-[#fefefe] mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold text-text-white mb-4">
             Projeto Sankofa – Percussão, Cultura e Educação Afro-brasileira
           </h1>
-          <p className="text-xl md:text-2xl text-[#f37b00] mb-8">
+          <p className="text-xl md:text-2xl text-text-orange-wheel mb-8">
             Transformando sons em identidade desde 2015
           </p>
           <Link
             href="/sobre"
-            className="inline-block px-8 py-4 bg-[#ce1d00] text-[#fefefe] rounded-lg hover:bg-[#5b1300] transition duration-300"
+            className="inline-block px-8 py-4 bg-engineering-orange text-text-white rounded-lg hover:bg-blood-red transition duration-300"
           >
             Conheça o Projeto
           </Link>

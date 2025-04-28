@@ -3,7 +3,7 @@ import { NewsHero } from "@/components/news/components/news-hero";
 
 export default function News() {
   return (
-    <div className="min-h-screen bg-[#fefefe]">
+    <div className="min-h-screen bg-background">
       <NewsHero />
       <NewsContent />
     </div>

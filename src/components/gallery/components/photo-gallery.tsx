@@ -32,7 +32,7 @@ export const PhotoGallery = () => {
   return (
     <section id="photo-gallery" className="py-20">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-[#f37b00] mb-12">
+        <h2 className="text-3xl font-bold text-text-orange-wheel mb-12">
           Momentos Capturados
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -63,7 +63,7 @@ export const GalleryItem = ({ src, alt, title }: GalleryItemProps) => {
         height={200}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-        <p className="text-[#fefefe]">{title}</p>
+        <p className="text-text-white">{title}</p>
       </div>
     </div>
   );

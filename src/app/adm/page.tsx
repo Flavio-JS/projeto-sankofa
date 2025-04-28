@@ -6,7 +6,7 @@ import { Pagination } from "@/components/admin/components/pagination";
 
 export default function Admin() {
   return (
-    <div className="min-h-screen bg-[#fefefe]">
+    <div className="min-h-screen bg-background">
       <AdminHero />
       <div className="container mx-auto px-6 py-8">
         <AdminTabs />

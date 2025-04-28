@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export const GallerySection = () => {
   return (
-    <section id="gallery" className="py-20 bg-[#2c0f00]">
+    <section id="gallery" className="py-20 bg-black-bean">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-[#f37b00] mb-12">
+        <h2 className="text-3xl font-bold text-center text-text-orange-wheel mb-12">
           Galeria de Performances
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div
             id="video-1"
-            className="aspect-video bg-[#0a0909] rounded-lg overflow-hidden"
+            className="aspect-video bg-black rounded-lg overflow-hidden"
           >
             <Image
               className="w-full h-full object-cover"
@@ -22,7 +22,7 @@ export const GallerySection = () => {
           </div>
           <div
             id="video-2"
-            className="aspect-video bg-[#0a0909] rounded-lg overflow-hidden"
+            className="aspect-video bg-black rounded-lg overflow-hidden"
           >
             <Image
               className="w-full h-full object-cover"
@@ -34,7 +34,7 @@ export const GallerySection = () => {
           </div>
           <div
             id="video-3"
-            className="aspect-video bg-[#0a0909] rounded-lg overflow-hidden"
+            className="aspect-video bg-black rounded-lg overflow-hidden"
           >
             <Image
               className="w-full h-full object-cover"

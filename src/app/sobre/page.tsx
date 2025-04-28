@@ -6,7 +6,7 @@ import { Timeline } from "@/components/about/components/timeline";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-[#fefefe]">
+    <div className="min-h-screen bg-background">
       <AboutHero />
 
       <section id="about-content" className="py-20">

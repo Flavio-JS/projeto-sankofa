@@ -26,12 +26,12 @@ export const NewsCard = ({
           alt={imageAlt}
         />
       </div>
-      <span className="text-[#ce1d00] text-sm">{date}</span>
-      <h3 className="text-xl font-bold text-[#2c0f00] mt-2 mb-3 group-hover:text-[#ce1d00] transition">
+      <span className="text-text-engineering-orange text-sm">{date}</span>
+      <h3 className="text-xl font-bold text-text-black-bean mt-2 mb-3 group-hover:text-text-engineering-orange transition">
         {title}
       </h3>
       <p className="text-gray-600 mb-4">{description}</p>
-      <span className="text-[#ce1d00] hover:text-[#f37b00] cursor-pointer">
+      <span className="text-text-engineering-orange hover:text-text-orange-wheel cursor-pointer">
         Leia mais →
       </span>
     </article>

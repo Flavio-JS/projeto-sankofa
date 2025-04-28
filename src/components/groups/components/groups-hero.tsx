@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const GroupsHero = () => {
   return (
-    <section id="groups-hero" className="relative h-[400px] bg-[#0a0909]">
+    <section id="groups-hero" className="relative h-[400px] bg-black">
       <div className="absolute inset-0">
         <Image
           width={200}
@@ -14,7 +14,7 @@ export const GroupsHero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90"></div>
       </div>
       <div className="relative container mx-auto px-6 h-full flex items-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-[#fefefe]">
+        <h1 className="text-5xl md:text-6xl font-bold text-text-white">
           Nossos Grupos
         </h1>
       </div>

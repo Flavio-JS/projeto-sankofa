@@ -17,17 +17,17 @@ const events = [
 
 export const UpcomingEvents = () => {
   return (
-    <div id="upcoming-events" className="bg-[#2c0f00] rounded-xl p-6 mb-8">
-      <h3 className="text-[#f37b00] text-xl font-bold mb-6">
+    <div id="upcoming-events" className="bg-black-bean rounded-xl p-6 mb-8">
+      <h3 className="text-text-orange-wheel text-xl font-bold mb-6">
         Próximos Eventos
       </h3>
       <div className="space-y-4">
         {events.map((event) => (
           <div
             key={event.id}
-            className="flex items-start space-x-4 text-[#fefefe]"
+            className="flex items-start space-x-4 text-text-white"
           >
-            <div className="bg-[#ce1d00] px-3 py-2 rounded-lg text-center min-w-[60px]">
+            <div className="bg-engineering-orange px-3 py-2 rounded-lg text-center min-w-[60px]">
               <span className="block text-sm">{event.month}</span>
               <span className="block text-xl font-bold">{event.day}</span>
             </div>

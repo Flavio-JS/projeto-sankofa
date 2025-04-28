@@ -1,3 +1,5 @@
+import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 export type Group = {
@@ -80,7 +82,7 @@ export const GroupCard = ({
   imageAlt,
 }: GroupCardProps) => {
   return (
-    <div className="bg-[#2c0f00] rounded-xl overflow-hidden border-2 border-[#f37b00]">
+    <div className="bg-black-bean rounded-xl overflow-hidden border-2 border-orange-wheel">
       <div className="h-[300px] relative">
         <Image
           width={200}
@@ -91,16 +93,16 @@ export const GroupCard = ({
         />
       </div>
       <div className="p-8">
-        <h2 className="text-3xl font-bold text-[#f37b00] mb-4">{name}</h2>
-        <p className="text-[#fefefe] mb-6">{description}</p>
+        <h2 className="text-3xl font-bold text-text-orange-wheel mb-4">{name}</h2>
+        <p className="text-text-white mb-6">{description}</p>
         <div className="flex items-center space-x-4">
-          <span className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer">
-            <i className="fa-brands fa-youtube text-2xl"></i>
+          <span className="text-text-white hover:text-text-orange-wheel cursor-pointer">
+            <FontAwesomeIcon icon={faYoutube} width={20} />
           </span>
-          <span className="text-[#fefefe] hover:text-[#f37b00] cursor-pointer">
-            <i className="fa-brands fa-instagram text-2xl"></i>
+          <span className="text-text-white hover:text-text-orange-wheel cursor-pointer">
+            <FontAwesomeIcon icon={faInstagram} width={20} />
           </span>
-          <span className="bg-[#f37b00] text-[#fefefe] px-4 py-2 rounded-lg hover:bg-[#ce1d00] cursor-pointer">
+          <span className="bg-orange-wheel text-text-white px-4 py-2 rounded-lg hover:bg-engineering-orange cursor-pointer">
             Ver Apresentações
           </span>
         </div>

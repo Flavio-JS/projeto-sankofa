@@ -8,7 +8,7 @@ export const Pagination = () => {
         <button className="px-3 py-1 rounded border border-gray-300 text-gray-500 hover:bg-gray-50">
           Anterior
         </button>
-        <button className="px-3 py-1 rounded bg-[#ce1d00] text-white">1</button>
+        <button className="px-3 py-1 rounded bg-engineering-orange text-white">1</button>
         <button className="px-3 py-1 rounded border border-gray-300 text-gray-500 hover:bg-gray-50">
           2
         </button>

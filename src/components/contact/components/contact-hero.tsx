@@ -11,10 +11,10 @@ export const ContactHero = () => {
           width={200}
           height={200}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-[#fefefe]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-background"></div>
       </div>
       <div className="relative container mx-auto px-6 h-full flex items-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-[#fefefe]">
+        <h1 className="text-5xl md:text-6xl font-bold text-text-white">
           Fale com a gente!
         </h1>
       </div>
