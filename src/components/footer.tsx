@@ -12,7 +12,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div id="footer-about">
             <h3 className="text-xl font-bold text-text-orange-wheel mb-4">
-              Projeto Sankofa
+              Associação Sankofa
             </h3>
             <p className="text-text-white">
               Percussão, Cultura e Educação Afro-brasileira
@@ -50,7 +50,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-blood-red text-center text-text-white">
-          <p>&copy; 2025 Projeto Sankofa. Todos os direitos reservados.</p>
+          <p>&copy; 2025 Associação Sankofa. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

@@ -15,7 +15,7 @@ export const AboutHero = () => {
       </div>
       <div className="relative container mx-auto px-6 h-full flex items-center">
         <h1 className="text-5xl md:text-6xl font-bold text-text-white">
-          Sobre o Projeto Sankofa
+          Sobre a Associação Sankofa
         </h1>
       </div>
     </section>

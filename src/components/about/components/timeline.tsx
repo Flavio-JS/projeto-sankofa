@@ -3,7 +3,7 @@ export const Timeline = () => {
     {
       year: "2015",
       content:
-        "Fundação do Projeto Sankofa no IFG Campus Inhumas, com foco em música, cultura afro-brasileira e educação.",
+        "Fundação da Associação Sankofa no IFG Campus Inhumas, com foco em música, cultura afro-brasileira e educação.",
       color: "bg-engineering-orange",
     },
     {

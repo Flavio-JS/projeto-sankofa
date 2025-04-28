@@ -69,7 +69,7 @@ export const Header = () => {
 
                   <div className="pb-6 px-4">
                     <p className="text-text-orange-wheel text-sm">
-                      Projeto Sankofa © {new Date().getFullYear()}
+                      Associação Sankofa © {new Date().getFullYear()}
                     </p>
                   </div>
                 </div>

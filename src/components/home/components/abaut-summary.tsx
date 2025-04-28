@@ -11,7 +11,7 @@ export const AboutSummary = () => {
             Nossa História
           </h2>
           <p className="text-text-white text-lg mb-8">
-            O Projeto Sankofa nasceu da união entre música, educação e cultura
+            a Associação Sankofa nasceu da união entre música, educação e cultura
             afro-brasileira. Através da percussão, criamos pontes entre o
             passado e o presente, celebrando nossa herança cultural.
           </p>

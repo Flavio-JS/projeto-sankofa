@@ -19,7 +19,7 @@ export const FeaturedPost = () => {
         Festival de Cultura Afro-Brasileira 2025
       </h2>
       <p className="text-gray-600 mb-6">
-        O Projeto Sankofa se prepara para mais uma edição do Festival de Cultura
+        a Associação Sankofa se prepara para mais uma edição do Festival de Cultura
         Afro-Brasileira. Este ano, o evento contará com apresentações especiais
         dos quatro grupos do projeto, além de oficinas e palestras...
       </p>
